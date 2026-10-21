@@ -1,0 +1,80 @@
+<% content_for :title, @list.title.presence || "A list of names" %>
+<% input = "rounded border border-stone-300 bg-white px-3 py-2 dark:border-stone-700 dark:bg-stone-900" %>
+<% button = "cursor-pointer rounded bg-stone-900 px-4 py-2 font-medium text-white dark:bg-stone-100 dark:text-stone-900" %>
+
+<%= form_with url: list_path(@list), method: :patch, class: "flex gap-2" do |f| %>
+  <%= f.text_field :title, value: @list.title, placeholder: "Untitled list",
+        class: "min-w-0 flex-1 border-0 bg-transparent p-0 text-3xl font-bold focus:ring-0" %>
+  <%= f.submit "Rename", class: "text-sm text-stone-500 cursor-pointer" %>
+<% end %>
+<p class="mt-1 text-sm text-stone-500">Bookmark this page: its address is the list's only key.</p>
+
+<% if flash[:alert] %>
+  <p class="mt-4 rounded bg-amber-100 px-3 py-2 text-amber-900 dark:bg-amber-950 dark:text-amber-200"><%= flash[:alert] %></p>
+<% end %>
+
+<section class="mt-8">
+  <h2 class="text-lg font-semibold">Held</h2>
+  <% if @claims.empty? %>
+    <p class="mt-2 text-stone-500">No agent holds a name yet.</p>
+  <% else %>
+    <ul class="mt-2 divide-y divide-stone-200 dark:divide-stone-800">
+      <% @claims.each_value do |claim| %>
+        <li class="flex flex-wrap items-baseline gap-x-3 py-2">
+          <span class="font-medium"><%= claim.display_name %></span>
+          <span class="text-xs uppercase tracking-wide <%= claim.state == "live" ? "text-emerald-600" : "text-stone-500" %>"><%= claim.state %></span>
+          <span class="min-w-0 flex-1 truncate text-sm text-stone-600 dark:text-stone-400">
+            <%= [claim.note, claim.host].compact_blank.join(" · ") %>
+          </span>
+          <span class="text-sm text-stone-500"><%= time_ago_in_words(claim.seen_at) %> ago</span>
+          <%= button_to "Release", list_claim_path(@list, claim.name), method: :delete,
+                class: "cursor-pointer text-sm text-red-700 dark:text-red-400" %>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
+</section>
+
+<section class="mt-8">
+  <h2 class="text-lg font-semibold">Names <span class="font-normal text-stone-500">(<%= @list.names.size %>)</span></h2>
+  <% if @list.names.empty? %>
+    <p class="mt-2 text-stone-500">
+      No names yet. Add your own below, or
+      <%= button_to "start with #{List::DEFAULT_NAMES.size} given names", list_default_names_path(@list),
+            form_class: "inline", class: "cursor-pointer underline" %>.
+    </p>
+  <% else %>
+    <ul class="mt-3 flex flex-wrap gap-2">
+      <% @list.names.each do |name| %>
+        <li class="flex items-center gap-1 rounded-full border px-3 py-1 text-sm
+                   <%= @claims[name.value] ? "border-emerald-600 bg-emerald-50 dark:bg-emerald-950" : "border-stone-300 dark:border-stone-700" %>">
+          <%= name.value.capitalize %>
+          <%= button_to "×", list_name_path(@list, name), method: :delete, form_class: "inline",
+                class: "cursor-pointer text-stone-400 hover:text-red-600", title: "Remove #{name.value.capitalize}" %>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <%= form_with url: list_names_path(@list), class: "mt-4 flex flex-col gap-2" do |f| %>
+    <%= f.text_area :names, rows: 3, placeholder: "Names to add, separated by spaces, commas or lines",
+          class: input %>
+    <div><%= f.submit "Add names", class: button %></div>
+  <% end %>
+</section>
+
+<section class="mt-10">
+  <h2 class="text-lg font-semibold">For agents</h2>
+  <% base = list_url(@list) %>
+  <pre class="mt-2 overflow-x-auto rounded bg-stone-900 p-4 text-sm text-stone-100"><code># a name for this session (asking again gives the same one, and keeps it)
+curl -sd session="$SESSION" -d note="Claude Code; my-repo" <%= base %>/claim
+
+# one particular name, kept until released
+curl -sd name=milan <%= base %>/reserve
+
+# give it back
+curl -sd name=milan <%= base %>/release
+
+# everything, as JSON
+curl -s <%= base %>.json</code></pre>
+</section>
