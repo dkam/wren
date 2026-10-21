@@ -32,6 +32,19 @@ Claims are made unique by two indexes on `claims`, `(list_id, name)` and
 `(list_id, session)`: if two agents race, the loser's insert fails and it tries
 another name.
 
+## Without the web
+
+The same lists and claims, straight from the database, as rake tasks. `LIST`
+is a list's token, and can be left out when there is only one.
+
+```sh
+bin/rails wren:new TITLE=local            # prints the token; EMPTY=1 for no default names
+bin/rails wren:claim SESSION=$SESSION NOTE="pi; repo" EXCLUDE=wren,milan
+bin/rails wren:reserve NAME=milan
+bin/rails wren:release NAME=milan
+bin/rails wren:list
+```
+
 ## Development
 
 ```sh
