@@ -1,4 +1,5 @@
 abby given-name female
+abe simpsons male
 abelard rangers-apprentice male
 aberforth harry-potter male hero
 ace doctor-who female hero
@@ -16,11 +17,13 @@ ahsoka star-wars female hero
 aiden given-name male
 aiko given-name female japanese
 aisha given-name female arabic
+akbar royalty male
 alaric given-name male
 alba given-name female
 alejandra given-name female spanish
 alex expanse male
 alexei given-name male russian slavic
+alfred royalty male
 alia dune female
 alma given-name female
 alyss rangers-apprentice female hero
@@ -41,13 +44,16 @@ angua discworld female hero
 anika given-name female
 anna expanse female
 anne austen female
+anthony bridgerton male
 anton given-name male
 anya given-name female russian slavic
 anya james-bond female
 appeal-to-reason culture-ships
+apu simpsons male
 arada murderbot female
 aragorn tolkien male hero
 arald rangers-apprentice male
+araminta bridgerton female villain
 aravis narnia female hero
 archer archer male
 archer star-trek male hero
@@ -63,11 +69,13 @@ arwen tolkien female hero
 asa given-name
 asher given-name male
 ashford expanse male
+ashoka royalty male
 aslan narnia male hero
 astrid given-name female nordic
 atlas given-name male
 atticus given-name male
 attitude-adjuster culture-ships
+augustus royalty male
 aurelio given-name male
 ava given-name female
 avasarala expanse female
@@ -81,9 +89,12 @@ banquo shakespeare male
 barclay star-trek male
 bard tolkien male hero
 barliman tolkien male
+barney simpsons male
+bart simpsons male
 barty harry-potter male villain
 bashir star-trek male hero
 basia expanse male
+bates austen female
 bb-8 star-wars droid
 beatrice shakespeare female
 beatrix given-name female
@@ -94,6 +105,7 @@ belanna star-trek female hero
 belinda given-name female
 bellatrix harry-potter female villain
 benedick shakespeare male
+benedict bridgerton male
 benedikt given-name male
 bennet austen male
 beorn tolkien male
@@ -112,6 +124,7 @@ bjorn given-name male nordic
 blair given-name scottish british
 blofeld james-bond male villain
 blythe given-name female english british
+bob simpsons male villain
 boba star-wars male villain
 bobbie expanse female
 bobby cryptonomicon male
@@ -127,11 +140,13 @@ boone william-gibson male
 bora-horza-gobuchul culture-ships
 borg-queen star-trek female villain
 boromir tolkien male hero
+boudicca royalty female
 bram given-name male dutch
 brandon austen male
 bree narnia male
 briar given-name female
 brigid given-name female irish
+brimsley bridgerton male
 brooks given-name male
 bruno given-name male
 brutha discworld male
@@ -140,6 +155,7 @@ buckbeak harry-potter male
 bull expanse male
 bunt james-bond female villain
 burnham star-trek female hero
+burns simpsons male villain
 burton william-gibson male
 c-3po star-wars droid
 cade given-name male
@@ -153,6 +169,7 @@ camille james-bond female
 canterbury expanse
 cantrell cryptonomicon male
 cara expanse female
+carl simpsons male
 carmen given-name female spanish
 carrot discworld male hero
 carver james-bond male villain
@@ -165,6 +182,7 @@ cassio shakespeare male
 cassius given-name male
 catalina given-name female spanish
 catherine austen female
+catherine royalty female
 cayce william-gibson female
 cecily given-name female english british
 cedric harry-potter male hero
@@ -176,9 +194,12 @@ chandra given-name indian
 chang star-trek male villain
 chani dune female hero
 chapel star-trek female hero
+charlemagne royalty male
 charlene cryptonomicon female
 charlie given-name
 charlie harry-potter male hero
+charlotte austen female
+charlotte bridgerton female
 chattan cryptonomicon male
 chay culture female
 cheery discworld female
@@ -188,19 +209,25 @@ chevette william-gibson female
 chewbacca star-wars male hero
 chiara given-name female italian
 cho harry-potter female
+christina royalty female
 churchill austen male
 cillian given-name male irish
+cixi royalty female
 clara doctor-who female hero
 clara given-name female
 clarissa expanse female
 clement given-name male
 cleo given-name female
+cleopatra royalty female
+cnut royalty male
 cohen discworld male
 cole given-name male
 colette given-name female french
+colin bridgerton male
 collins austen male
 colon discworld male
 conner william-gibson male
+constantine royalty male
 cora given-name female
 cordelia shakespeare female
 cormac given-name male irish
@@ -211,24 +238,30 @@ cosmo given-name male
 cossont culture female
 cotyar expanse male
 crabbe harry-potter male villain
+crawford austen male
+cressida bridgerton female
 crowley rangers-apprentice male hero
 crusher star-trek female hero
 culber star-trek male
 cyril archer male
+cyrus royalty male
 da5id snow-crash male
 daedra william-gibson female villain
 dajeil culture female
 dalia given-name female
 damien given-name male
 dana given-name
+danbury bridgerton female
 dane given-name male
 danika given-name female slavic
 dante given-name male italian
+daphne bridgerton female
 daphne given-name female greek
 darckense culture female
 darcy austen male
 daria given-name female
 darius given-name male
+darius royalty male
 data star-trek male hero
 davina given-name female scottish british
 davros doctor-who male villain
@@ -277,10 +310,16 @@ edda given-name female
 eddie hitchhikers
 edgar given-name male
 edith given-name female
+edmund austen male
 edmund narnia male hero
+edna simpsons female
 edric dune male
 edward austen male
+edwina bridgerton female
 efua given-name female ghanaian west-african
+elaine seinfeld female
+eleanor austen female
+eleanor royalty female
 elektra james-bond female villain
 eleni given-name female greek
 elethiomel culture male
@@ -290,9 +329,13 @@ elinor austen female
 elio given-name male italian
 eliza given-name female
 elizabeth austen female
+elizabeth royalty female
+elliot austen male
 elodie given-name female french
+eloise bridgerton female
 elowen given-name female cornish british
 elrond tolkien male hero
+elton austen male
 elvi expanse female
 elwing tolkien female
 emeka given-name male nigerian west-african
@@ -313,6 +356,7 @@ errinwright expanse male villain
 eskarina discworld female
 esme discworld female
 esme given-name female
+estelle seinfeld female
 esther given-name female
 estrella given-name female spanish
 ethics-gradient culture-ships
@@ -367,8 +411,10 @@ flynne william-gibson female
 foldar rangers-apprentice male villain
 fontaine william-gibson male
 ford hitchhikers male
+francesca bridgerton female
 francesca given-name female italian
 francois given-name male french
+frank seinfeld male
 frank-exchange-of-views culture-ships
 fred expanse male
 fred harry-potter male hero
@@ -385,9 +431,13 @@ gaspode discworld male
 gavriel given-name male hebrew
 gemma given-name female
 genar-hofoen culture male
+genevieve bridgerton female
 gentry william-gibson male
+george bridgerton male
 george harry-potter male hero
 george rangers-apprentice male
+george seinfeld male
+georgiana austen female
 georgiou star-trek female
 ghanima dune female
 gia given-name female italian
@@ -412,6 +462,7 @@ greebo discworld male
 greedo star-wars male
 greene james-bond male villain
 greer given-name female scottish british
+gregory bridgerton male
 gregson sherlock-holmes male
 greta given-name female
 grey-area culture-ships
@@ -425,7 +476,9 @@ guinan star-trek female
 gurathin murderbot male
 gurgeh culture male
 gurney dune male hero
+gustav royalty male
 gwen given-name female welsh british
+hadrian royalty male
 hagrid harry-potter male hero
 haldir tolkien male
 halt rangers-apprentice male hero
@@ -433,23 +486,28 @@ hamlet shakespeare male
 han star-wars male hero
 hana given-name female
 hannes given-name male
+harald royalty male
 harkonnen dune male villain
 harriet austen female
 harriet given-name female english british
 harry harry-potter male hero
 harry star-trek male hero
+hatshepsut royalty female
 havelock expanse male
 hazel given-name female
 heart-of-gold hitchhikers
 hector given-name male
 hedwig harry-potter female
+helen seinfeld female
 helga given-name female
 hemulen moomins
 hence-the-fortress culture-ships
 henrik given-name male nordic
+henry royalty male
 hera star-wars female hero
 hermione harry-potter female hero
 hilde given-name female
+himiko royalty female
 hiro given-name male japanese
 hiro snow-crash male hero
 holden expanse male
@@ -457,6 +515,7 @@ hollis william-gibson female
 holly james-bond female
 holmes sherlock-holmes male hero
 holse culture male
+homer simpsons male
 honey james-bond female
 hooch harry-potter female
 horace rangers-apprentice male hero
@@ -468,6 +527,7 @@ hudson sherlock-holmes female
 hugo given-name male
 hux star-wars male villain
 huxley given-name male
+hyacinth bridgerton female
 iago shakespeare male villain
 ida given-name female
 idril tolkien female
@@ -484,6 +544,7 @@ iona given-name female scottish british
 iris given-name female
 irulan dune female
 isabella austen female
+isabella royalty female
 isadora given-name female
 isak given-name male nordic
 ivar given-name male nordic
@@ -494,6 +555,7 @@ jack doctor-who male hero
 jada given-name female
 jade given-name female
 jadis narnia female villain
+jadwiga royalty female
 jadzia star-trek female hero
 jake star-trek male
 jakob given-name male
@@ -513,6 +575,7 @@ jaws james-bond male villain
 jeltz hitchhikers male villain
 jenny rangers-apprentice female
 jerry rick-and-morty male
+jerry seinfeld male
 jessica dune female
 jethro given-name male
 jill narnia female hero
@@ -527,6 +590,7 @@ juliet shakespeare female
 julius william-gibson male
 juno given-name female
 just-read-the-instructions culture-ships
+justinian royalty male
 jyn star-wars female hero
 k-2so star-wars droid
 k9 doctor-who
@@ -534,10 +598,12 @@ kabo culture male
 kaia given-name female
 kaito given-name male japanese
 kalani given-name hawaiian polynesian
+kamehameha royalty male
 kanan star-wars male hero
 kananga james-bond male villain
 karkaroff harry-potter male
 kasimir given-name male
+kate bridgerton female
 katja given-name female
 keiko given-name female japanese
 keiko star-trek female
@@ -555,15 +621,19 @@ kira star-trek female hero
 kiri given-name maori polynesian
 kirk star-trek male hero
 kissy james-bond female
+kitty austen female
 kivistik cryptonomicon male
 klaus given-name male german
 klebb james-bond female villain
 knightley austen male
 kofi given-name male ghanaian west-african
 kraiklyn culture male
+kramer seinfeld male
 kreacher harry-potter male
 krieger archer male
 kruge star-trek male villain
+krusty simpsons male
+kublai royalty male
 kumiko william-gibson female
 kylo star-wars male villain
 kynes dune male
@@ -593,17 +663,20 @@ leila given-name female
 leiter james-bond male hero
 lena given-name female
 leni given-name female german
+lenny simpsons male
 leon given-name male
 leonard discworld male
 lestrade sherlock-holmes male
 leto dune male hero
 librarian discworld male
 librarian snow-crash ai
+liliuokalani royalty female
 lily harry-potter female hero
 limiting-factor culture-ships
 linda william-gibson female
 linter culture male
 lior given-name hebrew
+lisa simpsons female
 lisbet given-name female nordic
 little-my moomins female
 little-rascal culture-ships
@@ -618,6 +691,8 @@ loeb cryptonomicon male villain
 lorca star-trek male villain
 lore star-trek male villain
 lorenzo given-name male italian
+louis royalty male
+louisa austen female
 loveless william-gibson male villain
 lowbeer william-gibson female
 lu-tze discworld male
@@ -649,6 +724,7 @@ mae given-name female
 maelcum william-gibson male
 maeva given-name female polynesian
 maeve given-name female irish
+maggie simpsons female
 magnus given-name male nordic
 magrat discworld female
 mai given-name female
@@ -660,22 +736,28 @@ malvolio shakespeare male
 mara given-name female
 marco expanse male villain
 marco given-name male italian
+margaret austen female
+marge simpsons female
 margit given-name female
 margot given-name female french
+margrethe royalty female
 mariana given-name female
 marianne austen female
 marin given-name
+marina bridgerton female
 marisol given-name female spanish
 marly william-gibson female
 martha doctor-who female hero
 martok star-trek male
 marvin hitchhikers male
+mary austen female
 mary cryptonomicon female
 mary sherlock-holmes female
 master doctor-who villain
 mateo given-name male spanish
 mathis james-bond male
 matilda given-name female
+matilda royalty female
 maul star-wars male villain
 maura given-name female irish
 maverick given-name male
@@ -691,10 +773,12 @@ mensah murderbot female
 mercutio shakespeare male
 merry tolkien male hero
 micah given-name male
+michaela bridgerton female
 michio expanse female
 miki murderbot
 milan given-name male slavic
 milgrim william-gibson male
+milhouse simpsons male
 miller expanse male
 milverton sherlock-holmes male villain
 mina given-name female
@@ -705,6 +789,8 @@ miro given-name male
 missy doctor-who female villain
 mistake-not culture-ships
 moana given-name female polynesian
+moctezuma royalty male
+moe simpsons male
 mohiam dune female
 moira given-name female
 moist discworld male hero
@@ -725,9 +811,11 @@ morgoth tolkien male villain
 moriarty sherlock-holmes male villain
 mort discworld male
 morty rick-and-morty male
+morty seinfeld male
 mothma star-wars female
 murderbot murderbot
 murtry expanse male villain
+musa royalty male
 muskrat moomins male
 mycroft sherlock-holmes male
 mymble moomins female
@@ -742,13 +830,17 @@ nardole doctor-who male
 natalia given-name female
 natalya james-bond female
 nauvoo expanse
+ned simpsons male
 neelix star-trek male
+nefertiti royalty female
 nell given-name female english british
+nelson simpsons male
 nero star-trek male villain
 nervous-energy culture-ships
 netherton william-gibson male
 neuromancer william-gibson ai
 neville harry-potter male hero
+newman seinfeld male villain
 ng snow-crash male
 niamh given-name female irish
 nick-nack james-bond male villain
@@ -768,6 +860,7 @@ not-invented-here culture-ships
 nova given-name female
 nox given-name
 nyssa doctor-who female
+nzinga royalty female
 oberon shakespeare male
 obi-wan star-wars male hero
 obrien star-trek male hero
@@ -776,7 +869,9 @@ odile given-name female french
 odo star-trek male hero
 of-course-i-still-love-you culture-ships
 ogg discworld female
+olaf royalty male
 olga given-name female russian slavic
+olga royalty female
 olive given-name female
 olivia given-name female
 ollivander harry-potter male
@@ -796,6 +891,7 @@ othello shakespeare male
 otto discworld male
 otto given-name male german
 overse murderbot female
+pachacuti royalty male
 padma harry-potter female
 padme star-wars female hero
 paloma given-name female spanish
@@ -806,12 +902,14 @@ paris star-trek male hero
 parkaboy william-gibson male
 parvati harry-potter female
 pascal given-name male french
+patty simpsons female
 paul dune male hero
 pauline rangers-apprentice female hero
 pavel given-name male slavic
 pax given-name
 peeves harry-potter male
 pella expanse
+penelope bridgerton female
 percy harry-potter male
 peter narnia male hero
 petra given-name female
@@ -830,6 +928,7 @@ poe star-wars male hero
 polly narnia female
 pomfrey harry-potter female
 ponder discworld male
+portia bridgerton female
 portia shakespeare female
 prax expanse male
 prin culture male
@@ -856,7 +955,10 @@ radagast tolkien male
 rafael given-name male
 rafe given-name male english british
 ragnak rangers-apprentice male
+ralph simpsons male
 rami given-name male arabic
+ramses royalty male
+ranavalona royalty female
 rand star-trek female
 random hitchhikers female
 randy cryptonomicon male
@@ -869,6 +971,7 @@ raven given-name
 raven snow-crash male villain
 ravi given-name male indian
 ray archer male
+razia royalty female
 razorback expanse
 reepicheep narnia male hero
 regan shakespeare female villain
@@ -879,6 +982,7 @@ rey star-wars female hero
 reza given-name male persian
 rhea given-name female
 rhys given-name male welsh british
+richard royalty male
 rick rick-and-morty male
 ridcully discworld male
 rife snow-crash male villain
@@ -924,6 +1028,7 @@ sabine star-wars female hero
 sable given-name female
 sacha given-name
 safin james-bond male villain
+saladin royalty male
 sally william-gibson female
 salma given-name female arabic
 samir given-name male arabic
@@ -941,11 +1046,14 @@ scarlett given-name female
 scopuli expanse
 scotty star-trek male hero
 seamus harry-potter male
+sejong royalty male
 sela star-trek female villain
 selethen rangers-apprentice male
 selina given-name female
 selma given-name female
+selma simpsons female
 senna given-name
+seondeok royalty female
 sergio given-name male
 serious-callers-only culture-ships
 seven star-trek female hero
@@ -953,21 +1061,25 @@ severine james-bond female
 shaddam dune male
 shadowfax tolkien male
 shaftoe cryptonomicon male
+shaka royalty male
 shasta narnia male hero
 shelob tolkien female villain
 shinzon star-trek male villain
 shoot-them-later culture-ships
 shylock shakespeare male
+siena bridgerton female
 siena given-name female
 sigrid given-name female nordic
 silas given-name male
 silva james-bond male villain
+simon bridgerton male
 sina given-name
 singh expanse male villain
 sirius harry-potter male hero
 sisko star-trek male hero
 size-isnt-everything culture-ships
 skaffen-amtiskaw culture drone
+skinner simpsons male
 skinner william-gibson male
 slartibartfast hitchhikers male
 sleeper-service culture-ships
@@ -977,6 +1089,7 @@ slughorn harry-potter male
 sma culture female
 smaug tolkien male villain
 smeagol tolkien male
+smithers simpsons male
 snape harry-potter male
 sniff moomins male
 snoke star-wars male villain
@@ -987,6 +1100,8 @@ so-much-for-subtlety culture-ships
 sober-counsel culture-ships
 sofia given-name female
 solitaire james-bond female
+solomon royalty male
+sophie bridgerton female
 soran star-trek male villain
 soren given-name male danish nordic
 spock star-trek male hero
@@ -998,12 +1113,14 @@ stellan given-name male swedish nordic
 stilgar dune male hero
 stinky moomins male
 suki given-name female
+suleiman royalty male
 sulu star-trek male hero
 summer rick-and-morty female
 sunniva given-name female norwegian nordic
 susan discworld female
 susan doctor-who female
 susan narnia female hero
+susan seinfeld female
 sutekh doctor-who male villain
 suvi given-name female finnish nordic
 sven given-name male nordic
@@ -1012,6 +1129,7 @@ svetlana given-name female russian slavic
 sybil discworld female
 sylvana given-name female
 tachi expanse
+tamar royalty female
 tamsin given-name female cornish british
 tanaka expanse female
 tanner james-bond male
@@ -1027,7 +1145,9 @@ the-ends-of-invention culture-ships
 thea given-name female
 theo given-name male
 theoden tolkien male hero
+theodora royalty female
 thorin tolkien male hero
+thorpe austen male
 thrawn star-wars male villain
 three murderbot
 thufir dune male
@@ -1063,6 +1183,7 @@ tuor tolkien male hero
 turin tolkien male
 turing cryptonomicon male
 turner william-gibson male
+tutankhamun royalty male
 tuvok star-trek male hero
 twoflower discworld male
 tybalt shakespeare male
@@ -1088,12 +1209,14 @@ vernon harry-potter male
 vesna given-name female slavic
 vesper james-bond female
 vetinari discworld male
+victoria royalty female
 viggo given-name male danish nordic
 viktor given-name male
 viktor harry-potter male
 vilja given-name female nordic
 vimes discworld male hero
 viola shakespeare female
+violet bridgerton female
 virek william-gibson male villain
 vitaly snow-crash male
 vito given-name male italian
@@ -1111,12 +1234,16 @@ wentworth austen male
 wesley given-name male english british
 wesley star-trek male hero
 weyoun star-trek male villain
+whistledown bridgerton female
 wickham austen male villain
 wiggins sherlock-holmes male
+wiggum simpsons male
 wiktor given-name male polish slavic
 wilder given-name male
+wilhelmina royalty female
 will rangers-apprentice male hero
 willa given-name female
+willie simpsons male
 willoughby austen male
 wing cryptonomicon male villain
 winky harry-potter female
@@ -1124,6 +1251,7 @@ winn star-trek female villain
 wintermute william-gibson ai
 witch-king tolkien male villain
 woodhouse archer male
+woodhouse austen male
 worf star-trek male hero
 wormtail harry-potter male villain
 wormtongue tolkien male villain
@@ -1136,6 +1264,7 @@ xanthe given-name female greek
 xavier given-name male
 xenia given-name female
 xenophobe culture-ships
+xerxes royalty male
 ximena given-name female spanish
 yalson culture female
 yamazaki william-gibson male
@@ -1157,6 +1286,7 @@ zaphod hitchhikers male
 zara given-name female
 zarniwoop hitchhikers male
 zelda given-name female
+zenobia royalty female
 zephyr given-name male
 ziller culture male
 ziyal star-trek female
