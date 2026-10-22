@@ -78,6 +78,12 @@ jobs:
         with:
           context: .
           platforms: ${{ matrix.platform }}
+          # GIT_SHA is read at boot by config/initializers/revision.rb, so a
+          # running container can say which commit it is; both end up as
+          # image labels.
+          build-args: |
+            GIT_SHA=${{ github.sha }}
+            VERSION=${{ needs.prepare.outputs.version }}
           cache-from: type=gha,scope=${{ matrix.arch }}
           cache-to: type=gha,mode=max,scope=${{ matrix.arch }}
           outputs: type=image,name=${{ env.IMAGE }},push-by-digest=true,name-canonical=true,push=true

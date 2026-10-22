@@ -47,6 +47,14 @@ RUN bundle install && \
 # Copy application code
 COPY . .
 
+# Stamp the commit this image was built from. .dockerignore excludes /.git/, so
+# the app cannot ask git at runtime — config/initializers/revision.rb reads this
+# file instead. Declared here rather than at the top because an ARG is only in
+# scope for the stage that declares it: put it before the FROM and the
+# --build-arg is silently ignored, and every deploy reports "unknown".
+ARG GIT_SHA=unknown
+RUN echo "${GIT_SHA}" > VERSION
+
 # Precompile bootsnap code for faster boot times.
 # -j 1 disable parallel compilation to avoid a QEMU bug: https://github.com/rails/bootsnap/issues/495
 RUN bundle exec bootsnap precompile -j 1 app/ lib/
@@ -77,3 +85,12 @@ ENTRYPOINT ["/rails/bin/docker-entrypoint"]
 # Start server via Thruster by default, this can be overwritten at runtime
 EXPOSE 80
 CMD ["./bin/thrust", "./bin/rails", "server"]
+
+# Label the image with its release and commit, so `docker inspect` on a host
+# says what is running. Both ARGs are declared again here because an ARG only
+# reaches the stage that declares it, and they come last because a new value
+# invalidates the cache of every layer after it.
+ARG VERSION=unknown
+ARG GIT_SHA=unknown
+LABEL org.opencontainers.image.version=$VERSION \
+      org.opencontainers.image.revision=$GIT_SHA

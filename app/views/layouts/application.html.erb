@@ -27,5 +27,9 @@
     <main class="mx-auto max-w-3xl px-4 py-10">
       <%= yield %>
     </main>
+
+    <footer class="mx-auto max-w-3xl px-4 pb-10 text-xs text-stone-400 dark:text-stone-500">
+      <%= tag.span("v#{Wren::VERSION}", title: "Wren #{Wren::VERSION}, revision #{Rails.application.config.x.revision.first(9)}") %>
+    </footer>
   </body>
 </html>

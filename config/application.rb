@@ -1,5 +1,10 @@
 require_relative "boot"
 
+# Before anything else, so Wren::VERSION is available to initializers and to
+# the footer. Kept requirable without Rails: build.yml reads it with a bare
+# `ruby -e`.
+require_relative "version"
+
 require "rails"
 # Pick the frameworks you want:
 require "active_model/railtie"
