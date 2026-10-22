@@ -1,0 +1,180 @@
+name: Build and publish image
+
+# Publishes the multi-arch image (amd64 + arm64) to GitHub Packages
+# (ghcr.io/dkam/wren) whenever config/version.rb changes on main — a version
+# bump IS the release. Each arch builds natively (no QEMU); a merge job stitches
+# them into one manifest tagged :vX.Y.Z (+ :latest for non-pre-releases), and a
+# final job creates the matching git tag and GitHub Release.
+#
+# To cut a release: edit Wren::VERSION in config/version.rb, commit, push.
+# For a dev build: set a pre-release version (e.g. "0.2.0-dev") — it publishes
+# :v0.2.0-dev, does not move :latest, and creates no git tag. Or run this
+# workflow manually.
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - config/version.rb
+  workflow_dispatch:
+
+env:
+  IMAGE: ghcr.io/${{ github.repository }}
+
+jobs:
+  # Read the SemVer constant; decide whether this release moves :latest.
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+      latest: ${{ steps.version.outputs.latest }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Read version from config/version.rb
+        id: version
+        run: |
+          V=$(ruby -e "require './config/version'; puts Wren::VERSION")
+          echo "version=$V" >> "$GITHUB_OUTPUT"
+          # A pre-release (e.g. 0.2.0-dev) publishes its own tag but not :latest.
+          if [[ "$V" == *-* ]]; then latest=false; else latest=true; fi
+          echo "latest=$latest" >> "$GITHUB_OUTPUT"
+          echo "Building v$V (move :latest = $latest)"
+
+  build:
+    needs: prepare
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - platform: linux/amd64
+            arch: amd64
+            runner: ubuntu-latest
+          - platform: linux/arm64
+            arch: arm64
+            runner: ubuntu-24.04-arm
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push by digest
+        id: build
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          platforms: ${{ matrix.platform }}
+          cache-from: type=gha,scope=${{ matrix.arch }}
+          cache-to: type=gha,mode=max,scope=${{ matrix.arch }}
+          outputs: type=image,name=${{ env.IMAGE }},push-by-digest=true,name-canonical=true,push=true
+
+      - name: Export digest
+        run: |
+          mkdir -p /tmp/digests
+          digest="${{ steps.build.outputs.digest }}"
+          touch "/tmp/digests/${digest#sha256:}"
+
+      - name: Upload digest
+        uses: actions/upload-artifact@v4
+        with:
+          name: digests-${{ matrix.arch }}
+          path: /tmp/digests/*
+          if-no-files-found: error
+          retention-days: 1
+
+  merge:
+    needs: [ prepare, build ]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Download digests
+        uses: actions/download-artifact@v8
+        with:
+          path: /tmp/digests
+          pattern: digests-*
+          merge-multiple: true
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create and push the multi-arch manifest
+        working-directory: /tmp/digests
+        run: |
+          tags="-t ${{ env.IMAGE }}:v${{ needs.prepare.outputs.version }}"
+          if [ "${{ needs.prepare.outputs.latest }}" = "true" ]; then
+            tags="$tags -t ${{ env.IMAGE }}:latest"
+          fi
+          docker buildx imagetools create $tags $(printf '${{ env.IMAGE }}@sha256:%s ' *)
+
+      - name: Inspect result
+        run: docker buildx imagetools inspect ${{ env.IMAGE }}:v${{ needs.prepare.outputs.version }}
+
+  # Tag the commit the image was built from, so `git checkout vX.Y.Z` gets you
+  # exactly what is running. Only for real releases: a pre-release publishes an
+  # image but does not earn a permanent mark in the history.
+  tag:
+    needs: [ prepare, merge ]
+    if: needs.prepare.outputs.latest == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    # The step talks to the API rather than to a working tree, so there is
+    # nothing here to check out.
+    env:
+      GH_REPO: ${{ github.repository }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      # One call, and the tag is a side effect of the release rather than a
+      # step before it — which is the whole claim this job makes.
+      #
+      # Not `git tag -a` + `git push origin $VERSION`: in spool that published
+      # both images and then failed on the push:
+      #
+      #   refusing to allow a GitHub App to create or update workflow
+      #   `.github/workflows/build.yml` without `workflows` permission
+      #
+      # GITHUB_TOKEN is a GitHub App token, and an App may not push a ref whose
+      # content includes workflow files — actions/checkout clones one commit
+      # deep, so the push offers that commit to the server as new content, this
+      # file included. There is no `workflows:` permission to grant in the block
+      # above, and the alternative is a PAT with `workflow` scope: a stored
+      # credential to rotate, in exchange for a git command doing what an API
+      # call does without one.
+      #
+      # --target names the commit the image was built from, so the tag lands
+      # there and not on whatever main has moved on to since.
+      - name: Create the GitHub Release
+        env:
+          VERSION: v${{ needs.prepare.outputs.version }}
+        run: |
+          if gh release view "$VERSION" >/dev/null 2>&1; then
+            echo "Release $VERSION already exists — nothing to do."
+            exit 0
+          fi
+          gh release create "$VERSION" \
+            --target "$GITHUB_SHA" \
+            --title "Wren $VERSION" \
+            --generate-notes
