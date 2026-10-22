@@ -1,0 +1,46 @@
+# Wren in production without Kamal: the app and Caddy for TLS, on one host.
+#
+#   cp .env.example .env    # then fill it in
+#   docker compose up -d
+#
+# Point WREN_HOST's DNS at this machine and leave ports 80 and 443 free: Caddy
+# needs both to get the certificate from Let's Encrypt. If you already run a
+# reverse proxy, delete the caddy service and give web a `ports:` mapping.
+name: wren
+
+services:
+  web:
+    image: ghcr.io/dkam/wren:latest
+    env_file: .env
+    # The SQLite file is the whole of the state: lists, names and claims.
+    volumes:
+      - wren_storage:/rails/storage
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost/up"]
+      interval: 10s
+      timeout: 3s
+      retries: 12
+      # The first boot of a fresh volume runs the migrations.
+      start_period: 30s
+    restart: unless-stopped
+
+  caddy:
+    image: caddy:2-alpine
+    command: caddy reverse-proxy --from ${WREN_HOST:?set WREN_HOST in .env} --to web:80
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      # Certificates. Losing them means re-issuing on every restart, which
+      # Let's Encrypt rate-limits.
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      web:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  wren_storage:
+  caddy_data:
+  caddy_config:
