@@ -21,12 +21,11 @@ class WrenTasksTest < ActiveSupport::TestCase
   end
 
   test "new, claim, claim again, list, release" do
-    token, = run_task(:new, TITLE: "local")
-    list = List.find_by!(token:)
-    assert_equal List::DEFAULT_NAMES.size, list.names.count
+    token, = run_task(:new, TITLE: "local", TAGS: "given-name")
+    assert_equal Catalog.tagged(%w[given-name]).size, List.find_by!(token:).names.count
 
     name, = run_task(:claim, SESSION: "s1", NOTE: "pi")
-    assert_includes List::DEFAULT_NAMES, name.downcase
+    assert_includes Catalog::NAMES[name.downcase].flatten, "given-name"
     assert_equal [ name, "" ], run_task(:claim, SESSION: "s1")
 
     out, = run_task(:list)
@@ -49,6 +48,20 @@ class WrenTasksTest < ActiveSupport::TestCase
     _, err = run_task(:claim, SESSION: "s1")
     assert_match(/which list\?.*#{a.token}.*#{b.token}/m, err)
     assert_equal [ "Bram", "" ], run_task(:claim, SESSION: "s1", LIST: b.token)
+  end
+
+  test "add NAMES, and the catalog's names carrying every one of TAGS" do
+    list = List.create!
+    heroines = Catalog.tagged(%w[harry-potter hero female])
+    assert_equal [ "added #{heroines.size + 1}", "" ], run_task(:add, NAMES: "wren", TAGS: "harry-potter hero female")
+    assert_equal (heroines + [ "wren" ]).sort, list.names.pluck(:value)
+
+    assert_equal [ "added 0", "" ], run_task(:add, NAMES: "wren", TAGS: "Harry-Potter, hero,female")
+    ENV.delete("NAMES")
+    assert_equal [ "added 0", "wren: no name in the catalog carries every one of harry-potter no-such-tag" ],
+      run_task(:add, TAGS: "harry-potter no-such-tag")
+    ENV.delete("TAGS")
+    assert_equal [ "", "wren: NAMES or TAGS is required" ], run_task(:add)
   end
 
   test "claim needs a session" do

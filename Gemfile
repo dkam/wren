@@ -32,6 +32,11 @@ gem "kamal", require: false
 # Add HTTP asset caching/compression and X-Sendfile acceleration to Puma [https://github.com/basecamp/thruster/]
 gem "thruster", require: false
 
+# Error tracking over the Sentry protocol, pointed at Splat. Inert unless
+# SENTRY_DSN is set, so development and test send nothing. See
+# config/initializers/sentry.rb, which keeps the keys out of what is sent.
+gem "sentry-rails"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"

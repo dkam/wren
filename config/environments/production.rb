@@ -21,14 +21,14 @@ Rails.application.configure do
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.asset_host = "http://assets.example.com"
 
-  # Assume all access to the app is happening through a SSL-terminating reverse proxy.
-  # config.assume_ssl = true
+  # Caddy ends TLS in front, so every request is taken to be over it. That also
+  # means force_ssl never redirects, and compose's http://localhost/up check works.
+  config.assume_ssl = true
 
-  # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  # config.force_ssl = true
-
-  # Skip http-to-https redirect for the default health check endpoint.
-  # config.ssl_options = { redirect: { exclude: ->(request) { request.path == "/up" } } }
+  # Strict-Transport-Security and secure cookies. The key is in a list page's
+  # address, so a browser must never ask for one over plain HTTP, not even once
+  # before a redirect.
+  config.force_ssl = true
 
   # Log to STDOUT with the current request id as a default log tag.
   config.log_tags = [ :request_id ]
@@ -59,12 +59,8 @@ Rails.application.configure do
   # Only use :id for inspections in production.
   config.active_record.attributes_for_inspect = [ :id ]
 
-  # Enable DNS rebinding protection and other `Host` header attacks.
-  # config.hosts = [
-  #   "example.com",     # Allow requests from example.com
-  #   /.*\.example\.com/ # Allow requests from subdomains like `www.example.com`
-  # ]
-  #
-  # Skip DNS rebinding protection for the default health check endpoint.
-  # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
+  # Answer only to Wren's own name, the one compose's Caddy serves, and refuse
+  # any other Host. The health check comes from inside the container, as localhost.
+  config.hosts = [ ENV.fetch("WREN_HOST", "wre.nmilne.com") ]
+  config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
 end

@@ -1,240 +1,1167 @@
-abby
-adele
-adrian
-agnes
-aiko
-aisha
-alba
-alma
-amara
-amelie
-anders
-anika
-anton
-anya
-ari
-arjun
-astrid
-aurelio
-ayla
-beatrix
-bela
-benedikt
-bianca
-bjorn
-blythe
-bodhi
-bram
-brigid
-bruno
-cai
-calla
-camille
-carmen
-cassius
-cecily
-celeste
-chandra
-chiara
-cillian
-clara
-clement
-colette
-cora
-cosima
-dalia
-damien
-dana
-daria
-darius
-delphine
-diego
-dina
-dora
-dmitri
-edda
-edgar
-edith
-efua
-eleni
-elias
-eliza
-elodie
-emeka
-emil
-enzo
-esme
-esther
-etta
-evander
-ezra
-fatima
-felix
-femi
-fenna
-fia
-finn
-flora
-florian
-frida
-gaia
-gareth
-gemma
-gideon
-gisela
-greta
-gwen
-hana
-hannes
-harriet
-hector
-helga
-henrik
-hilde
-hiro
-hugo
-ida
-ignacio
-ilse
-imogen
-ines
-ingrid
-iona
-isak
-ivo
-jada
-jakob
-janek
-jarrah
-jasper
-joanna
-jonas
-jora
-juno
-kaia
-kaito
-kalani
-kasimir
-katja
-keiko
-kenji
-kian
-kiri
-klaus
-kofi
-lachlan
-lale
-lars
-layla
-leila
-lena
-leni
-leon
-lior
-lisbet
-lorenzo
-luca
-ludo
-lumi
-luz
-mabel
-maeve
-magnus
-mai
-malak
-marco
-margit
-marisol
-mateo
-matilda
-mei
-milan
-mira
-miro
-moana
-nadia
-naomi
-nell
-nico
-nika
-nils
-nina
-noor
-nora
-odile
-olga
-olivia
-omar
-oona
-orla
-oskar
-otto
-paloma
-pavel
-petra
-philippa
-pia
-piet
-priya
-quentin
-quinn
-rafael
-rania
-ravi
-reza
-rhea
-rikke
-rita
-rohan
-rosa
-rui
-runa
-saanvi
-sabine
-sacha
-salma
-samir
-sanna
-saoirse
-selma
-senna
-sigrid
-silas
-sina
-sofia
-soren
-stellan
-sunniva
-suvi
-tamsin
-tariq
-teodor
-thea
-theo
-tilda
-tomas
-tova
-ulla
-una
-uriel
-valentin
-vera
-vesna
-viggo
-vilja
-vito
-wanda
-wiktor
-willa
-xavier
-xenia
-ximena
-yara
-yasmin
-yusuf
-yvette
-zainab
-zara
-zelda
-zofia
-zora
+abby given-name female
+abelard rangers-apprentice male
+aberforth harry-potter male hero
+ace doctor-who female hero
+ackbar star-wars male
+adele given-name female
+adler sherlock-holmes female
+adora discworld female
+adrian given-name male
+adriana given-name female
+adric doctor-who male
+agnes discworld female
+agnes given-name female
+agrajag hitchhikers male
+ahsoka star-wars female hero
+aiden given-name male
+aiko given-name female japanese
+aisha given-name female arabic
+alaric given-name male
+alba given-name female
+alejandra given-name female spanish
+alex expanse male
+alexei given-name male russian slavic
+alia dune female
+alma given-name female
+alyss rangers-apprentice female hero
+amara given-name female
+ambros given-name male
+amelie given-name female french
+amena murderbot female
+amos expanse male
+amy cryptonomicon female
+amy doctor-who female hero
+anakin star-wars male
+anaplian culture female
+anders given-name male nordic
+andor given-name male
+andre given-name male
+angie william-gibson female
+angua discworld female hero
+anika given-name female
+anna expanse female
+anne austen female
+anton given-name male
+anya given-name female russian slavic
+anya james-bond female
+appeal-to-reason culture-ships
+arada murderbot female
+aragorn tolkien male hero
+arald rangers-apprentice male
+aravis narnia female hero
+archer archer male
+archer star-trek male hero
+ari given-name
+ariel shakespeare
+arin given-name
+arjun given-name male indian
+armitage william-gibson male
+art murderbot ai
+arthur harry-potter male hero
+arthur hitchhikers male
+arwen tolkien female hero
+asa given-name
+asher given-name male
+ashford expanse male
+aslan narnia male hero
+astrid given-name female nordic
+atlas given-name male
+atticus given-name male
+attitude-adjuster culture-ships
+aurelio given-name male
+ava given-name female
+avasarala expanse female
+avi cryptonomicon male
+ayla given-name female
+azalea given-name female
+azog tolkien male villain
+balin tolkien male
+balveda culture female
+banquo shakespeare male
+barclay star-trek male
+bard tolkien male hero
+barliman tolkien male
+barty harry-potter male villain
+bashir star-trek male hero
+basia expanse male
+bb-8 star-wars droid
+beatrice shakespeare female
+beatrix given-name female
+beckett given-name male
+behemoth expanse
+bela given-name
+belanna star-trek female hero
+belinda given-name female
+bellatrix harry-potter female villain
+benedick shakespeare male
+benedikt given-name male
+bennet austen male
+beorn tolkien male
+beren tolkien male hero
+beryl cryptonomicon female
+beth rick-and-morty female
+bharadwaj murderbot female
+bianca given-name female italian
+bigend william-gibson male
+bilbo tolkien male hero
+bill doctor-who female
+bill harry-potter male hero
+bingley austen male
+bischoff cryptonomicon male
+bjorn given-name male nordic
+blair given-name scottish british
+blofeld james-bond male villain
+blythe given-name female english british
+boba star-wars male villain
+bobbie expanse female
+bobby cryptonomicon male
+bobby william-gibson male
+bodhi given-name
+bodhi star-wars male hero
+bofur tolkien male
+bolg tolkien male villain
+bombadil tolkien male
+bombur tolkien male
+bond james-bond male hero
+boone william-gibson male
+bora-horza-gobuchul culture-ships
+borg-queen star-trek female villain
+boromir tolkien male hero
+bram given-name male dutch
+brandon austen male
+bree narnia male
+briar given-name female
+brigid given-name female irish
+brooks given-name male
+bruno given-name male
+brutha discworld male
+bryn given-name welsh british
+buckbeak harry-potter male
+bull expanse male
+bunt james-bond female villain
+burnham star-trek female hero
+burton william-gibson male
+c-3po star-wars droid
+cade given-name male
+cai given-name male welsh british
+caliban shakespeare male
+calista given-name female
+calla given-name female
+callum given-name male scottish british
+camille given-name female french
+camille james-bond female
+canterbury expanse
+cantrell cryptonomicon male
+cara expanse female
+carmen given-name female spanish
+carrot discworld male hero
+carver james-bond male villain
+case william-gibson male
+caspian given-name male
+caspian narnia male hero
+cassandra rangers-apprentice female hero
+cassian star-wars male hero
+cassio shakespeare male
+cassius given-name male
+catalina given-name female spanish
+catherine austen female
+cayce william-gibson female
+cecily given-name female english british
+cedric harry-potter male hero
+celeborn tolkien male
+celeste given-name female
+celia given-name female
+chakotay star-trek male hero
+chandra given-name indian
+chang star-trek male villain
+chani dune female hero
+chapel star-trek female hero
+charlene cryptonomicon female
+charlie given-name
+charlie harry-potter male hero
+chattan cryptonomicon male
+chay culture female
+cheery discworld female
+chekov star-trek male hero
+cheryl archer female
+chevette william-gibson female
+chewbacca star-wars male hero
+chiara given-name female italian
+cho harry-potter female
+churchill austen male
+cillian given-name male irish
+clara doctor-who female hero
+clara given-name female
+clarissa expanse female
+clement given-name male
+cleo given-name female
+cohen discworld male
+cole given-name male
+colette given-name female french
+collins austen male
+colon discworld male
+conner william-gibson male
+cora given-name female
+cordelia shakespeare female
+cormac given-name male irish
+cortazar expanse male villain
+cosette given-name female french
+cosima given-name female
+cosmo given-name male
+cossont culture female
+cotyar expanse male
+crabbe harry-potter male villain
+crowley rangers-apprentice male hero
+crusher star-trek female hero
+culber star-trek male
+cyril archer male
+da5id snow-crash male
+daedra william-gibson female villain
+dajeil culture female
+dalia given-name female
+damien given-name male
+dana given-name
+dane given-name male
+danika given-name female slavic
+dante given-name male italian
+daphne given-name female greek
+darckense culture female
+darcy austen male
+daria given-name female
+darius given-name male
+data star-trek male hero
+davina given-name female scottish british
+davros doctor-who male villain
+dawes expanse male
+dean harry-potter male
+death discworld male
+deep-thought hitchhikers
+delphine given-name female french
+denethor tolkien male
+dentist cryptonomicon male villain
+desdemona shakespeare female
+detritus discworld male
+dibbler discworld male
+diego given-name male spanish
+different-tan culture-ships
+digory narnia male
+din star-wars male hero
+dina given-name female
+dmitri given-name male russian slavic
+dobby harry-potter male hero
+doctor doctor-who hero
+dolohov harry-potter male villain
+domino james-bond female
+donna doctor-who female hero
+donnager expanse
+dooku star-wars male villain
+dora given-name female
+dorfl discworld male
+dorian given-name male
+dorotea william-gibson female villain
+doug cryptonomicon male
+dr-no james-bond male villain
+draco harry-potter male villain
+drax james-bond male villain
+drummer expanse female
+duarte expanse male villain
+dudley harry-potter male
+dukat star-trek male villain
+dumbledore harry-potter male hero
+duncan dune male hero
+duncan rangers-apprentice male hero
+dwalin tolkien male
+earendil tolkien male hero
+eberhard cryptonomicon male
+edda given-name female
+eddie hitchhikers
+edgar given-name male
+edith given-name female
+edmund narnia male hero
+edric dune male
+edward austen male
+efua given-name female ghanaian west-african
+elektra james-bond female villain
+eleni given-name female greek
+elethiomel culture male
+elias given-name male
+elina given-name female
+elinor austen female
+elio given-name male italian
+eliza given-name female
+elizabeth austen female
+elodie given-name female french
+elowen given-name female cornish british
+elrond tolkien male hero
+elvi expanse female
+elwing tolkien female
+emeka given-name male nigerian west-african
+emelia given-name female
+emil given-name male
+emma austen female
+empiricist culture-ships
+emrys given-name male welsh british
+enki snow-crash male
+enoch cryptonomicon male
+enoch given-name male
+enzo given-name male italian
+enzo snow-crash male
+eomer tolkien male hero
+eowyn tolkien female hero
+erak rangers-apprentice male
+errinwright expanse male villain
+eskarina discworld female
+esme discworld female
+esme given-name female
+esther given-name female
+estrella given-name female spanish
+ethics-gradient culture-ships
+etienne given-name male french
+etta given-name female
+eustace narnia male hero
+eva given-name female
+evander given-name male
+evangeline given-name female
+evanthe given-name female greek
+eve given-name female
+evelyn given-name female
+everett given-name male
+ewan given-name male scottish british
+ezra given-name male
+ezra star-wars male hero
+ezri star-trek female
+falstaff shakespeare male
+fanny austen female
+faramir tolkien male hero
+fate-amenable-to-change culture-ships
+fatima given-name female arabic
+fawkes harry-potter male
+faye given-name female
+feanor tolkien male
+felix given-name male
+femi given-name nigerian west-african
+fenchurch hitchhikers female
+fenna given-name female dutch
+fenring dune male
+ferbin culture male
+feyd dune male villain
+fia given-name female
+fido snow-crash
+filch harry-potter male
+fili tolkien male
+filip expanse male
+fillyjonk moomins female
+fingolfin tolkien male hero
+finn given-name male
+finn star-wars male hero
+finn william-gibson male
+firenze harry-potter male
+flatline william-gibson male
+flere-imsaho culture drone
+fleur harry-potter female hero
+flexible-demeanour culture-ships
+flitwick harry-potter male
+flora given-name female
+florian given-name male
+flynne william-gibson female
+foldar rangers-apprentice male villain
+fontaine william-gibson male
+ford hitchhikers male
+francesca given-name female italian
+francois given-name male french
+frank-exchange-of-views culture-ships
+fred expanse male
+fred harry-potter male hero
+freya given-name female nordic
+frida given-name female
+frodo tolkien male hero
+fudge harry-potter male
+gaia given-name female italian
+galadriel tolkien female hero
+gandalf tolkien male hero
+garak star-trek male
+gareth given-name male welsh british
+gaspode discworld male
+gavriel given-name male hebrew
+gemma given-name female
+genar-hofoen culture male
+gentry william-gibson male
+george harry-potter male hero
+george rangers-apprentice male
+georgiou star-trek female
+ghanima dune female
+gia given-name female italian
+gideon given-name male
+gilan rangers-apprentice male hero
+gimli tolkien male hero
+ginny harry-potter female hero
+gisela given-name female
+glaurung tolkien male villain
+gloin tolkien male
+glorfindel tolkien male
+glory cryptonomicon female
+goldberry tolkien female
+goldfinger james-bond male villain
+goneril shakespeare female villain
+goto-dengo cryptonomicon male
+gowron star-trek male
+goyle harry-potter male villain
+graham doctor-who male
+grant james-bond male villain
+greebo discworld male
+greedo star-wars male
+greene james-bond male villain
+greer given-name female scottish british
+gregson sherlock-holmes male
+greta given-name female
+grey-area culture-ships
+greyback harry-potter male villain
+grievous star-wars male villain
+grindelwald harry-potter male villain
+griphook harry-potter male
+grogu star-wars male
+groke moomins female
+guinan star-trek female
+gurathin murderbot male
+gurgeh culture male
+gurney dune male hero
+gwen given-name female welsh british
+hagrid harry-potter male hero
+haldir tolkien male
+halt rangers-apprentice male hero
+hamlet shakespeare male
+han star-wars male hero
+hana given-name female
+hannes given-name male
+harkonnen dune male villain
+harriet austen female
+harriet given-name female english british
+harry harry-potter male hero
+harry star-trek male hero
+havelock expanse male
+hazel given-name female
+heart-of-gold hitchhikers
+hector given-name male
+hedwig harry-potter female
+helga given-name female
+hemulen moomins
+hence-the-fortress culture-ships
+henrik given-name male nordic
+hera star-wars female hero
+hermione harry-potter female hero
+hilde given-name female
+hiro given-name male japanese
+hiro snow-crash male hero
+holden expanse male
+hollis william-gibson female
+holly james-bond female
+holmes sherlock-holmes male hero
+holse culture male
+honey james-bond female
+hooch harry-potter female
+horace rangers-apprentice male hero
+horatio shakespeare male
+horza culture male
+hoshi star-trek female hero
+hotblack hitchhikers male
+hudson sherlock-holmes female
+hugo given-name male
+hux star-wars male villain
+huxley given-name male
+iago shakespeare male villain
+ida given-name female
+idril tolkien female
+idris given-name male
+ignacio given-name male spanish
+igor discworld male
+ilse given-name female
+ilya given-name male russian slavic
+imogen given-name female english british
+india given-name female
+ines given-name female
+ingrid given-name female nordic
+iona given-name female scottish british
+iris given-name female
+irulan dune female
+isabella austen female
+isadora given-name female
+isak given-name male nordic
+ivar given-name male nordic
+ivo given-name male
+ivy given-name female
+jabba star-wars male villain
+jack doctor-who male hero
+jada given-name female
+jade given-name female
+jadis narnia female villain
+jadzia star-trek female hero
+jake star-trek male
+jakob given-name male
+james harry-potter male hero
+jamie doctor-who male
+jamis dune male
+jane austen female
+janek given-name male slavic
+janeway star-trek female hero
+jango star-wars male
+jar-jar star-wars male
+jarrah given-name australian
+jasmine given-name female
+jasper given-name male
+jaundiced-outlook culture-ships
+jaws james-bond male villain
+jeltz hitchhikers male villain
+jenny rangers-apprentice female
+jerry rick-and-morty male
+jessica dune female
+jethro given-name male
+jill narnia female hero
+jinx james-bond female hero
+joanna given-name female
+jonas given-name male
+jora given-name
+juanita snow-crash female hero
+julian given-name male
+julie expanse female
+juliet shakespeare female
+julius william-gibson male
+juno given-name female
+just-read-the-instructions culture-ships
+jyn star-wars female hero
+k-2so star-wars droid
+k9 doctor-who
+kabo culture male
+kaia given-name female
+kaito given-name male japanese
+kalani given-name hawaiian polynesian
+kanan star-wars male hero
+kananga james-bond male villain
+karkaroff harry-potter male
+kasimir given-name male
+katja given-name female
+keiko given-name female japanese
+keiko star-trek female
+kellen given-name male
+kenji given-name male japanese
+keren rangers-apprentice male villain
+kes star-trek female
+khan star-trek male villain
+kian given-name male
+kieran given-name male irish
+kili tolkien male
+killing-time culture-ships
+kingsley harry-potter male hero
+kira star-trek female hero
+kiri given-name maori polynesian
+kirk star-trek male hero
+kissy james-bond female
+kivistik cryptonomicon male
+klaus given-name male german
+klebb james-bond female villain
+knightley austen male
+kofi given-name male ghanaian west-african
+kraiklyn culture male
+kreacher harry-potter male
+krieger archer male
+kruge star-trek male villain
+kumiko william-gibson female
+kylo star-wars male villain
+kynes dune male
+lachlan given-name male scottish british
+laforge star-trek male hero
+lagos snow-crash male
+lale given-name female turkish
+lana archer female
+lando star-wars male hero
+laney william-gibson male
+lara given-name female
+largo james-bond male villain
+lars given-name male nordic
+lavender harry-potter female
+lawrence cryptonomicon male
+layla given-name female arabic
+lazarus given-name male
+le-chiffre james-bond male villain
+leander given-name male
+lear shakespeare male
+lededje culture female
+lee snow-crash male
+leela doctor-who female hero
+legolas tolkien male hero
+leia star-wars female hero
+leila given-name female
+leiter james-bond male hero
+lena given-name female
+leni given-name female german
+leon given-name male
+leonard discworld male
+lestrade sherlock-holmes male
+leto dune male hero
+librarian discworld male
+librarian snow-crash ai
+lily harry-potter female hero
+limiting-factor culture-ships
+linda william-gibson female
+linter culture male
+lior given-name hebrew
+lisbet given-name female nordic
+little-my moomins female
+little-rascal culture-ships
+liv given-name female nordic
+liveware-problem culture-ships
+livia given-name female
+livueta culture female
+lobelia tolkien female
+lockhart harry-potter male
+locutus star-trek male villain
+loeb cryptonomicon male villain
+lorca star-trek male villain
+lore star-trek male villain
+lorenzo given-name male italian
+loveless william-gibson male villain
+lowbeer william-gibson female
+lu-tze discworld male
+luca given-name male italian
+lucia expanse female
+lucius harry-potter male villain
+lucy austen female
+lucy narnia female hero
+ludo given-name male
+luke star-wars male hero
+lumi given-name female finnish nordic
+luna harry-potter female hero
+lupin harry-potter male hero
+luthien tolkien female hero
+luz given-name female spanish
+lwaxana star-trek female
+lydia austen female
+lyra given-name female
+lysander given-name male
+lysander shakespeare male
+m james-bond
+mabel given-name female english british
+macbeth shakespeare male villain
+mace star-wars male hero
+maddie rangers-apprentice female hero
+maddox given-name male
+madeleine james-bond female
+mae given-name female
+maelcum william-gibson male
+maeva given-name female polynesian
+maeve given-name female irish
+magnus given-name male nordic
+magrat discworld female
+mai given-name female
+malak given-name female arabic
+malakai given-name male
+malcolm rangers-apprentice male
+malory archer female
+malvolio shakespeare male
+mara given-name female
+marco expanse male villain
+marco given-name male italian
+margit given-name female
+margot given-name female french
+mariana given-name female
+marianne austen female
+marin given-name
+marisol given-name female spanish
+marly william-gibson female
+martha doctor-who female hero
+martok star-trek male
+marvin hitchhikers male
+mary cryptonomicon female
+mary sherlock-holmes female
+master doctor-who villain
+mateo given-name male spanish
+mathis james-bond male
+matilda given-name female
+maul star-wars male villain
+maura given-name female irish
+maverick given-name male
+mavis given-name female
+mawhrin-skel culture drone
+maxime harry-potter female
+maxine given-name female
+mccoy star-trek male hero
+mcgonagall harry-potter female hero
+mei expanse female
+mei given-name female
+mensah murderbot female
+mercutio shakespeare male
+merry tolkien male hero
+micah given-name male
+michio expanse female
+miki murderbot
+milan given-name male slavic
+milgrim william-gibson male
+miller expanse male
+milverton sherlock-holmes male villain
+mina given-name female
+mira given-name female
+miranda shakespeare female
+miraz narnia male villain
+miro given-name male
+missy doctor-who female villain
+mistake-not culture-ships
+moana given-name female polynesian
+mohiam dune female
+moira given-name female
+moist discworld male hero
+molly harry-potter female hero
+molly william-gibson female
+mona given-name female
+mona william-gibson female
+moneypenny james-bond female
+monica expanse female
+moody harry-potter male hero
+moominmamma moomins female
+moominpappa moomins male
+moomintroll moomins male
+moran sherlock-holmes male villain
+morgan given-name welsh british
+morgarath rangers-apprentice male villain
+morgoth tolkien male villain
+moriarty sherlock-holmes male villain
+mort discworld male
+morty rick-and-morty male
+mothma star-wars female
+murderbot murderbot
+murtry expanse male villain
+muskrat moomins male
+mycroft sherlock-holmes male
+mymble moomins female
+myrtle harry-potter female
+nadia given-name female
+nagini harry-potter female villain
+naomi expanse female
+naomi given-name female
+naomi star-trek female
+narcissa harry-potter female
+nardole doctor-who male
+natalia given-name female
+natalya james-bond female
+nauvoo expanse
+neelix star-trek male
+nell given-name female english british
+nero star-trek male villain
+nervous-energy culture-ships
+netherton william-gibson male
+neuromancer william-gibson ai
+neville harry-potter male hero
+ng snow-crash male
+niamh given-name female irish
+nick-nack james-bond male villain
+nico given-name male
+nicosar culture male villain
+nika given-name female
+nils given-name male nordic
+nina given-name female
+nisha given-name female indian
+nobby discworld male
+noemi given-name female
+nog star-trek male
+nomi james-bond female hero
+noor given-name arabic
+nora given-name female
+not-invented-here culture-ships
+nova given-name female
+nox given-name
+nyssa doctor-who female
+oberon shakespeare male
+obi-wan star-wars male hero
+obrien star-trek male hero
+oddjob james-bond male villain
+odile given-name female french
+odo star-trek male hero
+of-course-i-still-love-you culture-ships
+ogg discworld female
+olga given-name female russian slavic
+olive given-name female
+olivia given-name female
+ollivander harry-potter male
+omar given-name male arabic
+omega doctor-who male villain
+onatopp james-bond female villain
+oona given-name female
+opal given-name female
+ophelia shakespeare female
+oramen culture male
+orion given-name male
+orla given-name female irish
+orman rangers-apprentice male
+osgood doctor-who female
+oskar given-name male
+othello shakespeare male
+otto discworld male
+otto given-name male german
+overse murderbot female
+padma harry-potter female
+padme star-wars female hero
+paloma given-name female spanish
+paloma james-bond female hero
+palpatine star-wars male villain
+pam archer female
+paris star-trek male hero
+parkaboy william-gibson male
+parvati harry-potter female
+pascal given-name male french
+paul dune male hero
+pauline rangers-apprentice female hero
+pavel given-name male slavic
+pax given-name
+peeves harry-potter male
+pella expanse
+percy harry-potter male
+peter narnia male hero
+petra given-name female
+petunia harry-potter female
+phasma star-wars female villain
+philippa given-name female english british
+phlox star-trek male
+pia given-name female
+picard star-trek male hero
+piet given-name male dutch
+pike star-trek male hero
+pin-lee murderbot female
+pippin tolkien male hero
+piter dune male villain
+poe star-wars male hero
+polly narnia female
+pomfrey harry-potter female
+ponder discworld male
+portia shakespeare female
+prax expanse male
+prin culture male
+priya given-name female indian
+problem-child culture-ships
+prospero shakespeare male
+puck shakespeare male
+puddleglum narnia male hero
+pure-big-mad-boat-man culture-ships
+q james-bond male hero
+q star-trek male
+qira star-wars female
+qiria culture male
+quark star-trek male
+quentin given-name male
+qui-gon star-wars male hero
+quilan culture male
+quinn given-name
+quirrell harry-potter male villain
+r2-d2 star-wars droid
+rabadash narnia male villain
+rabban dune male villain
+radagast tolkien male
+rafael given-name male
+rafe given-name male english british
+ragnak rangers-apprentice male
+rami given-name male arabic
+rand star-trek female
+random hitchhikers female
+randy cryptonomicon male
+rania given-name female arabic
+raquel given-name female spanish
+rassilon doctor-who male villain
+ratthi murderbot male
+ratz william-gibson male
+raven given-name
+raven snow-crash male villain
+ravi given-name male indian
+ray archer male
+razorback expanse
+reepicheep narnia male hero
+regan shakespeare female villain
+rei william-gibson female ai
+renard james-bond male villain
+rex star-wars male hero
+rey star-wars female hero
+reza given-name male persian
+rhea given-name female
+rhys given-name male welsh british
+rick rick-and-morty male
+ridcully discworld male
+rife snow-crash male villain
+riker star-trek male hero
+rikke given-name female danish nordic
+rilian narnia male
+rincewind discworld male
+rita given-name female
+rita harry-potter female
+river doctor-who female
+river given-name
+riviera william-gibson male villain
+ro star-trek female
+rob-anybody discworld male
+rocinante expanse
+rodney rangers-apprentice male
+rohan given-name male indian
+rom star-trek male
+romana doctor-who female
+romeo shakespeare male
+ron harry-potter male hero
+rory doctor-who male hero
+rosa given-name female
+rosalind shakespeare female
+rosamund given-name female english british
+rose doctor-who female hero
+rose given-name female
+rose star-wars female hero
+rosie tolkien female
+rowan given-name
+roxana given-name female
+ruby doctor-who female
+rudy cryptonomicon male
+rui given-name male portuguese
+runa given-name female
+rune given-name male nordic
+ryan doctor-who male
+rydell william-gibson male
+saanvi given-name female indian
+sabina given-name female
+sabine given-name female
+sabine star-wars female hero
+sable given-name female
+sacha given-name
+safin james-bond male villain
+sally william-gibson female
+salma given-name female arabic
+samir given-name male arabic
+samwise tolkien male hero
+sanna given-name female nordic
+saoirse given-name female irish
+sarah-jane doctor-who female hero
+sarek star-trek male
+saru star-trek male hero
+saruman tolkien male villain
+saskia given-name female dutch
+sauron tolkien male villain
+scaramanga james-bond male villain
+scarlett given-name female
+scopuli expanse
+scotty star-trek male hero
+seamus harry-potter male
+sela star-trek female villain
+selethen rangers-apprentice male
+selina given-name female
+selma given-name female
+senna given-name
+sergio given-name male
+serious-callers-only culture-ships
+seven star-trek female hero
+severine james-bond female
+shaddam dune male
+shadowfax tolkien male
+shaftoe cryptonomicon male
+shasta narnia male hero
+shelob tolkien female villain
+shinzon star-trek male villain
+shoot-them-later culture-ships
+shylock shakespeare male
+siena given-name female
+sigrid given-name female nordic
+silas given-name male
+silva james-bond male villain
+sina given-name
+singh expanse male villain
+sirius harry-potter male hero
+sisko star-trek male hero
+size-isnt-everything culture-ships
+skaffen-amtiskaw culture drone
+skinner william-gibson male
+slartibartfast hitchhikers male
+sleeper-service culture-ships
+slick william-gibson male
+sloane given-name female
+slughorn harry-potter male
+sma culture female
+smaug tolkien male villain
+smeagol tolkien male
+snape harry-potter male
+sniff moomins male
+snoke star-wars male villain
+snork moomins male
+snorkmaiden moomins female
+snufkin moomins male
+so-much-for-subtlety culture-ships
+sober-counsel culture-ships
+sofia given-name female
+solitaire james-bond female
+soran star-trek male villain
+soren given-name male danish nordic
+spock star-trek male hero
+sprout harry-potter female
+stacey james-bond female
+stamets star-trek male
+steely-glint culture-ships
+stellan given-name male swedish nordic
+stilgar dune male hero
+stinky moomins male
+suki given-name female
+sulu star-trek male hero
+summer rick-and-morty female
+sunniva given-name female norwegian nordic
+susan discworld female
+susan doctor-who female
+susan narnia female hero
+sutekh doctor-who male villain
+suvi given-name female finnish nordic
+sven given-name male nordic
+svengal rangers-apprentice male
+svetlana given-name female russian slavic
+sybil discworld female
+sylvana given-name female
+tachi expanse
+tamsin given-name female cornish british
+tanaka expanse female
+tanner james-bond male
+tardis doctor-who
+tariq given-name male arabic
+tarkin star-wars male villain
+teatime discworld male villain
+tegan doctor-who female
+tennyson rangers-apprentice male villain
+teodor given-name male
+teresa expanse female
+the-ends-of-invention culture-ships
+thea given-name female
+theo given-name male
+theoden tolkien male hero
+thorin tolkien male hero
+thrawn star-wars male villain
+three murderbot
+thufir dune male
+tiffany discworld female hero
+tiffany james-bond female
+tilda given-name female
+tilly star-trek female hero
+tilney austen male
+tirian narnia male hero
+titania shakespeare female
+tito william-gibson male
+tobias given-name male
+tomalak star-trek male villain
+tomas given-name male
+tonks harry-potter female hero
+too-ticky moomins female
+tova given-name female
+tpol star-trek female hero
+tracy james-bond female
+treebeard tolkien male hero
+trejo expanse male
+trelawney harry-potter female
+trevelyan james-bond male villain
+trillian hitchhikers female
+trip star-trek male hero
+trobar rangers-apprentice male
+troi star-trek female hero
+trufflehunter narnia male
+trumpkin narnia male
+tug rangers-apprentice male
+tumnus narnia male
+tuor tolkien male hero
+turin tolkien male
+turing cryptonomicon male
+turner william-gibson male
+tuvok star-trek male hero
+twoflower discworld male
+tybalt shakespeare male
+uhura star-trek female hero
+ulla given-name female nordic
+ulver culture female
+umbridge harry-potter female villain
+una given-name female
+una star-trek female hero
+unfortunate-conflict-of-evidence culture-ships
+ungoliant tolkien female villain
+uriel given-name male
+vader star-wars male villain
+valentin given-name male
+valentina given-name female
+valeska given-name female
+vatueil culture male
+vaughn given-name male welsh british
+veppers culture male villain
+vera given-name female
+verity william-gibson female
+vernon harry-potter male
+vesna given-name female slavic
+vesper james-bond female
+vetinari discworld male
+viggo given-name male danish nordic
+viktor given-name male
+viktor harry-potter male
+vilja given-name female nordic
+vimes discworld male hero
+viola shakespeare female
+virek william-gibson male villain
+vitaly snow-crash male
+vito given-name male italian
+vivienne given-name female french
+voldemort harry-potter male villain
+vorbis discworld male villain
+voytek william-gibson male
+wai-lin james-bond female hero
+wanda given-name female polish slavic
+watson sherlock-holmes male hero
+watto star-wars male
+weatherwax discworld female
+wedge star-wars male hero
+wentworth austen male
+wesley given-name male english british
+wesley star-trek male hero
+weyoun star-trek male villain
+wickham austen male villain
+wiggins sherlock-holmes male
+wiktor given-name male polish slavic
+wilder given-name male
+will rangers-apprentice male hero
+willa given-name female
+willoughby austen male
+wing cryptonomicon male villain
+winky harry-potter female
+winn star-trek female villain
+wintermute william-gibson ai
+witch-king tolkien male villain
+woodhouse archer male
+worf star-trek male hero
+wormtail harry-potter male villain
+wormtongue tolkien male villain
+wowbagger hitchhikers male
+wren given-name
+xan expanse male
+xander given-name male
+xander rangers-apprentice male
+xanthe given-name female greek
+xavier given-name male
+xenia given-name female
+xenophobe culture-ships
+ximena given-name female spanish
+yalson culture female
+yamazaki william-gibson male
+yar star-trek female hero
+yara given-name female
+yasmin given-name female
+yaz doctor-who female
+yime culture female
+yoda star-wars male hero
+ysabell discworld female
+yt snow-crash female hero
+yueh dune male
+yusuf given-name male arabic
+yvette given-name female french
+zainab given-name female arabic
+zakalwe culture male
+zane given-name male
+zaphod hitchhikers male
+zara given-name female
+zarniwoop hitchhikers male
+zelda given-name female
+zephyr given-name male
+ziller culture male
+ziyal star-trek female
+zoe doctor-who female
+zoe given-name female
+zofia given-name female polish slavic
+zora given-name female slavic
+zorin james-bond male villain

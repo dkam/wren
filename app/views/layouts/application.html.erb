@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= content_for(:title) || "take.nmilne.com" %></title>
+    <title><%= content_for(:title) || "wre.nmilne.com" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Wren">
@@ -24,11 +24,11 @@
   </head>
 
   <body class="bg-stone-50 text-stone-900 dark:bg-stone-950 dark:text-stone-100">
-    <main class="mx-auto max-w-3xl px-4 py-10">
+    <main class="mx-auto <%= content_for(:width) || "max-w-3xl" %> px-4 py-10">
       <%= yield %>
     </main>
 
-    <footer class="mx-auto max-w-3xl px-4 pb-10 text-xs text-stone-400 dark:text-stone-500">
+    <footer class="mx-auto <%= content_for(:width) || "max-w-3xl" %> px-4 pb-10 text-xs text-stone-400 dark:text-stone-500">
       <%= tag.span("v#{Wren::VERSION}", title: "Wren #{Wren::VERSION}, revision #{Rails.application.config.x.revision.first(9)}") %>
     </footer>
   </body>

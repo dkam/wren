@@ -1,0 +1,21 @@
+<%# The names the list gives out. Redrawn in place after every change, which tells the catalog what to hide. %>
+<% names = list.names.pluck(:value) %>
+<div id="chosen" data-picker-target="chosen" data-names="<%= names.join(" ") %>" class="flex min-h-0 flex-1 flex-col">
+  <h3 class="font-medium">Your names <span class="font-normal text-stone-500">(<%= names.size %>)</span></h3>
+  <% if names.empty? %>
+    <p class="mt-2 text-sm text-stone-500">No names yet. Take some from the catalog, or add your own.</p>
+  <% else %>
+    <ul class="mt-2 flex min-h-0 flex-wrap content-start gap-1.5 overflow-y-auto max-lg:max-h-72">
+      <% names.each do |name| %>
+        <% claim = claims[name] %>
+        <%= tag.li title: claim ? [ "held", claim.note ].compact_blank.join(": ") : Catalog::NAMES[name]&.join(", "),
+              class: [ "flex items-center rounded-full border py-0.5 pl-2.5 text-sm",
+                       claim ? "border-emerald-600 bg-emerald-50 dark:bg-emerald-950" : "border-stone-300 dark:border-stone-700" ] do %>
+          <%= name.capitalize %>
+          <%= tag.button "×", form: "remove-name", formaction: list_name_path(list, name), title: "Remove #{name.capitalize}",
+                class: "cursor-pointer px-1.5 text-stone-400 hover:text-red-600" %>
+        <% end %>
+      <% end %>
+    </ul>
+  <% end %>
+</div>

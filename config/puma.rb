@@ -31,6 +31,11 @@ threads threads_count, threads_count
 # Specifies the `port` that Puma will listen on to receive requests; default is 3000.
 port ENV.fetch("PORT", 3000)
 
+# A 413 for any body over 64 KB, before it is read. Rack caps a form at 4 MB
+# but nothing caps JSON, and the most a list ever sends, all 1000 names at
+# their longest, is half this.
+http_content_length_limit 64.kilobytes
+
 # Allow puma to be restarted by `bin/rails restart` command.
 plugin :tmp_restart
 

@@ -1,7 +1,8 @@
 # Wren without the web: the same lists and claims, straight from the database.
 # LIST is a list's token; with only one list it can be left out.
 #
-#   bin/rails wren:new [TITLE=...] [EMPTY=1]          a list, filled with the default names unless EMPTY
+#   bin/rails wren:new [TITLE=...] [NAMES=] [TAGS=]   a list, with names as for add; prints its token
+#   bin/rails wren:add [NAMES="a b"] [TAGS="x y"]     NAMES, and the catalog's names carrying every one of TAGS
 #   bin/rails wren:claim SESSION=... [NOTE=] [HOST=] [EXCLUDE=a,b]
 #   bin/rails wren:reserve NAME=... [NOTE=]
 #   bin/rails wren:release NAME=...
@@ -19,11 +20,30 @@ namespace :wren do
 
   def wren_env(key) = ENV.fetch(key) { abort "wren: #{key} is required" }
 
-  desc "Make a list, filled with the default names unless EMPTY=1"
+  # Adds NAMES, and the catalog's names carrying every one of TAGS, the way
+  # Take all does on the page. Returns how many were new.
+  def wren_add(list)
+    tags = ENV["TAGS"].to_s.downcase.split(/[\s,]+/).compact_blank
+    tagged = tags.any? ? Catalog.tagged(tags) : []
+    warn "wren: no name in the catalog carries every one of #{tags.join(" ")}" if tags.any? && tagged.empty?
+
+    before = list.names.count
+    invalid = list.add_names([ ENV["NAMES"], *tagged ])
+    warn "wren: not names, so skipped: #{invalid.join(", ")}" if invalid.any?
+    list.names.count - before
+  end
+
+  desc "Make a list, with NAMES and the catalog's names carrying every one of TAGS, and print its token"
   task new: :environment do
     list = List.create!(title: ENV["TITLE"].presence)
-    list.add_names(List::DEFAULT_NAMES.join(" ")) unless ENV["EMPTY"].present?
+    wren_add(list)
     puts list.token
+  end
+
+  desc "Add NAMES, and the catalog's names carrying every one of TAGS"
+  task add: :environment do
+    abort "wren: NAMES or TAGS is required" if ENV["NAMES"].blank? && ENV["TAGS"].blank?
+    puts "added #{wren_add(wren_list)}"
   end
 
   desc "A name for SESSION: the one it holds, or a free one"

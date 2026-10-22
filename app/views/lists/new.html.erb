@@ -1,15 +1,29 @@
+<% input = "min-w-0 flex-1 rounded border border-stone-300 bg-white px-3 py-2 dark:border-stone-700 dark:bg-stone-900" %>
+<% button = "cursor-pointer rounded bg-stone-900 px-4 py-2 font-medium text-white dark:bg-stone-100 dark:text-stone-900" %>
+
 <h1 class="text-3xl font-bold">Is this name taken?</h1>
 <p class="mt-4 text-stone-600 dark:text-stone-400">
   Coding agents are bad at picking names: left to themselves, three will all choose
-  the same one. Make a list of names here and let them take one each instead. No two
-  agents on the same list are ever given the same name.
+  the same one. Make a key, choose the names it gives out, and let your agents take
+  one each instead. No two agents with the same key are ever given the same name.
 </p>
 <p class="mt-2 text-stone-600 dark:text-stone-400">
-  There are no accounts. A list's address is its key, so keep it to yourself and your agents.
+  There are no accounts. A key is all it takes to use or change a list, so keep it to
+  yourself and your agents.
 </p>
 
-<%= form_with url: lists_path, class: "mt-8 flex flex-wrap gap-2" do |f| %>
-  <%= f.text_field :title, placeholder: "What the list is for (optional)",
-        class: "min-w-0 flex-1 rounded border border-stone-300 bg-white px-3 py-2 dark:border-stone-700 dark:bg-stone-900" %>
-  <%= f.submit "New list", class: "cursor-pointer rounded bg-stone-900 px-4 py-2 font-medium text-white dark:bg-stone-100 dark:text-stone-900" %>
+<% if flash[:alert] %>
+  <p class="mt-4 rounded bg-amber-100 px-3 py-2 text-amber-900 dark:bg-amber-950 dark:text-amber-200"><%= flash[:alert] %></p>
+<% end %>
+
+<h2 class="mt-8 text-lg font-semibold">A new key</h2>
+<%= form_with url: lists_path, class: "mt-2 flex flex-wrap gap-2" do |f| %>
+  <%= f.text_field :title, placeholder: "What it is for (optional)", class: input %>
+  <%= f.submit "Make a key", class: button %>
+<% end %>
+
+<h2 class="mt-8 text-lg font-semibold">A key you have</h2>
+<%= form_with url: find_list_path, class: "mt-2 flex flex-wrap gap-2" do |f| %>
+  <%= f.text_field :key, placeholder: "The key, or its whole address", class: input, autocomplete: "off" %>
+  <%= f.submit "Open", name: nil, class: button %>
 <% end %>

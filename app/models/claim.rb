@@ -8,6 +8,9 @@ class Claim < ApplicationRecord
 
   normalizes :name, with: -> { it.strip.downcase }
   validates :name, format: Name::FORMAT
+  validates :note, :host, length: { maximum: 200 }
+  # Room for a UUID, or agent-name's pid and start time, but not for junk.
+  validates :session, length: { maximum: 64 }
 
   scope :live, -> { where(session: nil).or(where(seen_at: TTL.ago..)) }
   scope :lapsed, -> { where.not(session: nil).where(seen_at: ...TTL.ago) }

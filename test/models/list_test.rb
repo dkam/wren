@@ -73,4 +73,26 @@ class ListTest < ActiveSupport::TestCase
     assert_equal [ "9lives", "o'neil" ], @list.add_names("Dora, dora\nelias 9lives o'neil alba")
     assert_equal %w[alba bram cora dora elias], @list.names.pluck(:value)
   end
+
+  test "a title, session, note or host too long is refused" do
+    assert_not List.new(title: "x" * 101).valid?
+    assert @list.claim(session: "x" * 64), "64 fits a UUID, or a pid and start time"
+    assert_raises(ActiveRecord::RecordInvalid) { @list.claim(session: "y" * 65) }
+    assert_equal 1, @list.claims.count
+    assert_raises(ActiveRecord::RecordInvalid) { @list.claim(session: "s1", note: "x" * 201) }
+    assert_raises(ActiveRecord::RecordInvalid) { @list.reserve(name: "wren", host: "x" * 201) }
+  end
+
+  test "a list holds at most MAX_NAMES names, and adds none of a batch that would pass it" do
+    @list.add_names((1..(List::MAX_NAMES - 3)).map { "n#{it}" }.join(" "))
+    error = assert_raises(ActiveRecord::RecordInvalid) { @list.add_names("dora elias") }
+    assert_match(/at most #{List::MAX_NAMES} names/, error.message)
+    assert_not @list.names.exists?(value: "dora")
+  end
+
+  test "a list holds at most MAX_NAMES claims" do
+    rows = (1..List::MAX_NAMES).map { { name: "n#{it}", seen_at: Time.current, created_at: Time.current, updated_at: Time.current } }
+    @list.claims.insert_all(rows)
+    assert_raises(ActiveRecord::RecordInvalid) { @list.reserve(name: "wren") }
+  end
 end
