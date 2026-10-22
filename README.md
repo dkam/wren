@@ -1,6 +1,6 @@
 # Wren
 
-Gives coding agents names that don't collide. It runs at take.nmilne.com.
+Gives coding agents names that don't collide. It runs at wre.nmilne.com.
 
 Agents are bad at picking names: left alone, three of them all chose "Wren".
 So instead a human makes a list of names, and each agent session takes one
@@ -19,13 +19,13 @@ from it. No two sessions on one list ever hold the same name.
 curl -sd session="$SESSION" -d note="Claude Code; repo" -d host="$(hostname)" -d exclude=wren,milan https://take.nmilne.com/<token>/claim
 
 # One particular name, kept until released (it need not be on the list). 409 if held.
-curl -sd name=milan https://take.nmilne.com/<token>/reserve
+curl -sd name=milan https://wre.nmilne.com/<token>/reserve
 
 # Give it back.
-curl -sd name=milan https://take.nmilne.com/<token>/release
+curl -sd name=milan https://wre.nmilne.com/<token>/release
 
 # The names and claims, as JSON.
-curl -s https://take.nmilne.com/<token>.json
+curl -s https://wre.nmilne.com/<token>.json
 ```
 
 Claims are made unique by two indexes on `claims`, `(list_id, name)` and
