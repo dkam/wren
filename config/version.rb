@@ -11,5 +11,5 @@
 # Lives in config/ rather than lib/ so it can be read without booting Rails:
 #   ruby -e "require './config/version'; puts Wren::VERSION"
 module Wren
-  VERSION = "0.1.0"
+  VERSION = "0.2.0"
 end
